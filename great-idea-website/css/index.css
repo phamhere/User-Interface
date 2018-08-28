@@ -52,15 +52,133 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html, body, button {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Your code starts here! */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* navigation */
+.navigation {
+	position: fixed;
+	width: 85%;
+	margin-top: 20px;
+}
+
+.navigation nav {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+}
+
+.navigation nav a {
+	text-decoration: none;
+	color: gray;
+	margin-right: 75px;
+}
+
+.logo {
+	position: absolute;
+	right: 0;
+}
+
+/* header */
+header {
+	padding-top: 150px;
+	margin-bottom: 65px;
+}
+
+header .title {
+	display: inline-block;
+	text-align: center;
+	margin: 0 10%;
+}
+
+h1 {
+	font-size: 90px;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	border: 4px solid black;
+	background: white;
+	font-size: 16px;
+}
+
+header img:hover {
+	animation: 2s spin linear infinite;
+}
+
+@keyframes spin {
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg) translateX(550px);
+	}
+}
+
+/* main content */
+/* top content */
+.features, .about, .services, .product, .vision {
+	display: inline-block;
+}
+
+.top-content {
+	margin: 30px 0;
+}
+
+.features, .about {
+	width: 49.5%;
+}
+
+.features {
+	padding-right: 15px;
+}
+
+.about {
+	padding-left: 15px;
+}
+
+.middle-img {
+	display: block;
+	margin: 0 auto;
+}
+
+/* bottom content */
+.bottom-content {
+	margin: 30px 0;
+}
+
+.services, .product, .vision {
+	width: 33%;
+	padding-right: 15px;
+}
+
+/* contact */
+.contact {
+	margin: 50px 0;
+}
+
+/* footer */
+footer {
+	text-align: center;
+	padding-bottom: 75px;
+}
