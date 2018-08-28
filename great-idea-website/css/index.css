@@ -78,13 +78,17 @@ p {
 .navigation {
 	position: fixed;
 	width: 85%;
-	margin-top: 20px;
+	height: 60px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background: white;
+	z-index: 1;
 }
 
 .navigation nav {
 	display: inline-block;
 	position: absolute;
-	top: 10px;
+	top: 20px;
 }
 
 .navigation nav a {
